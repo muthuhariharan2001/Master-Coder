@@ -1,32 +1,3 @@
-// import { runCode } from '@/services/codeRunner';
-
-// export async function POST(req) {
-//   try {
-//     const { language, code } = await req.json();
-
-//     if (!language || !code) {
-//       return new Response(JSON.stringify({
-//         success: false,
-//         message: "Language and code are required."
-//       }), { status: 400 });
-//     }
-
-//     const output = await runCode(language, code);
-
-//     return new Response(JSON.stringify({
-//       success: true,
-//       output
-//     }), { status: 200 });
-
-//   } catch (error) {
-//     console.error("Execution Error:", error.message);
-
-//     return new Response(JSON.stringify({
-//       success: false,
-//       error: error.message
-//     }), { status: 500 });
-//   }
-// }
 
 import { runCode } from '@/services/codeRunner';
 
