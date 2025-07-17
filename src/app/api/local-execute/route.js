@@ -1,5 +1,5 @@
-const { generateFile } = require('../helpers/generateFile');
-const { runCode } = require('../helpers/runCode');
+import { generateFile } from '@/helpers/generateFile';
+import { runCode } from '@/services/codeRunner';
 const fs = require('fs');
 
 const executeCode = async (req, res) => {
